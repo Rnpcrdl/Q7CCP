@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 using namespace std;
 
@@ -22,13 +21,10 @@ int main() {
     double dy = y2 - y1;
 
     double distance = sqrt(pow(dx, 2) + pow(dy, 2));
-    double roundedDistance = round(distance);
 
-    cout << fixed << setprecision(3);
-    cout << "\ndx: " << dx << endl;
-    cout << "dy: " << dy << endl;
-    cout << "Distance: " << distance << endl;
-    cout << "Rounded distance: " << roundedDistance << endl;
+    cout << "\nHorizontal Difference (dx): " << dx << endl;
+    cout << "Vertical Difference (dy): " << dy << endl;
+    cout << "Distance: " << round(distance) << endl;
 
     return 0;
 }
